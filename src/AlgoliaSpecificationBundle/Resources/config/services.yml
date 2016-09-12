@@ -1,0 +1,8 @@
+services:
+    gbprod.algolia_specification_registry:
+        class: GBProd\AlgoliaSpecification\Registry
+
+    gbprod.algolia_specification_handler:
+        class: GBProd\AlgoliaSpecification\Handler
+        arguments:
+            - "@gbprod.algolia_specification_registry"
