@@ -4,6 +4,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/gbprod/algolia-specification-bundle/compare/v1.0.1...HEAD)
 
+## [v2.0.0](https://github.com/gbprod/algolia-specification-bundle/compare/v1.0.1...v2.0.0)
+
+ - Drop php5 compat
+ - Add stuffs for php7
+ - Update deps
+
 ## [v1.0.1](https://github.com/gbprod/algolia-specification-bundle/compare/v1.0.0...v1.0.1)
 
  - Fix documentation

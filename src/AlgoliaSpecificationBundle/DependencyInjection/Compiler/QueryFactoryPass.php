@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace GBProd\AlgoliaSpecificationBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;

@@ -2,17 +2,18 @@
 
 namespace Tests\GBProd\AlgoliaSpecificationBundle\DependencyInjection;
 
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 use GBProd\AlgoliaSpecificationBundle\DependencyInjection\AlgoliaSpecificationExtension;
 use GBProd\AlgoliaSpecification\Handler;
 use GBProd\AlgoliaSpecification\Registry;
+use PHPUnit\Framework\TestCase;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
  * Tests for AlgoliaSpecificationExtension
  *
  * @author gbprod <contact@gb-prod.fr>
  */
-class AlgoliaSpecificationExtensionTest extends \PHPUnit_Framework_TestCase
+class AlgoliaSpecificationExtensionTest extends TestCase
 {
     private $extension;
     private $container;

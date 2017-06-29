@@ -2,8 +2,9 @@
 
 namespace Tests\GBProd\AlgoliaSpecificationBundle;
 
-use GBProd\AlgoliaSpecificationBundle\DependencyInjection\Compiler\QueryFactoryPass;
 use GBProd\AlgoliaSpecificationBundle\AlgoliaSpecificationBundle;
+use GBProd\AlgoliaSpecificationBundle\DependencyInjection\Compiler\QueryFactoryPass;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
@@ -12,7 +13,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  *
  * @author GBProd <contact@gb-prod.fr>
  */
-class AlgoliaSpecificationBundleTest extends \PHPUnit_Framework_TestCase
+class AlgoliaSpecificationBundleTest extends TestCase
 {
     public function testConstruction()
     {
