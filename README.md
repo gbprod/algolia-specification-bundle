@@ -73,13 +73,9 @@ use Algolia\QueryBuilder;
 
 class IsAvailableFactory implements Factory
 {
-    public function build(Specification $spec, QueryBuilder $qb)
+    public function create(Specification $spec)
     {
-        return $qb->query()->bool()
-            ->addMust()
-                $qb->query()->term(['available' => "0"]),
-            )
-        ;
+        return 'available=1';
     }
 }
 ```
@@ -117,7 +113,6 @@ services:
 namespace GBProd\Acme\Infrastructure\Product;
 
 use Algolia\Client;
-use Algolia\QueryBuilder;
 use GBProd\AlgoliaSpecification\Handler;
 use GBProd\Specification\Specification;
 
@@ -135,14 +130,11 @@ class AlgoliaProductRepository implements ProductRepository
 
     public function findSatisfying(Specification $specification)
     {
-        $type = $this
-            ->getIndex('catalog')
-            ->getType('product')
-        ;
-
-        $query = $this->handler->handle($specification, new QueryBuilder());
-
-        return $type->search($query);
+        $index = $this->client->initIndex('products');
+        
+        $query = $this->handler->handle($specification);
+        
+        return $type->search(['filters' => $query]);
     }
 }
 ```
