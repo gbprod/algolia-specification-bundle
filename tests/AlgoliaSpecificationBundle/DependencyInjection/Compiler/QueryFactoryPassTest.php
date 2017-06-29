@@ -2,8 +2,9 @@
 
 namespace Tests\GBProd\AlgoliaSpecificationBundle\DependencyInjection\Compiler;
 
-use GBProd\AlgoliaSpecification\Handler;
 use GBProd\AlgoliaSpecificationBundle\DependencyInjection\Compiler\QueryFactoryPass;
+use GBProd\AlgoliaSpecification\Handler;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Reference;
@@ -13,7 +14,7 @@ use Symfony\Component\DependencyInjection\Reference;
  *
  * @author gbprod <contact@gb-prod.fr>
  */
-class QueryFactoryPassTest extends \PHPUnit_Framework_TestCase
+class QueryFactoryPassTest extends TestCase
 {
     public function testThrowExceptionIfNoHandlerDefinition()
     {
