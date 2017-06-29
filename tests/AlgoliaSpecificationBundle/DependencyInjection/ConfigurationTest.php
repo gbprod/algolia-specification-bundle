@@ -18,10 +18,7 @@ class ConfigurationTest extends \PHPUnit_Framework_TestCase
 
         $tree = $configuration->getConfigTreeBuilder();
 
-        $this->assertInstanceOf(
-            TreeBuilder::class,
-            $tree
-        );
+        $this->assertInstanceOf(TreeBuilder::class, $tree);
 
         $this->assertEquals(
             'algolia_specification_bundle',

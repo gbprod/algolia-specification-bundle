@@ -2,17 +2,15 @@
 
 This bundle integrates [algolia-specification](git@github.com:gbprod/algolia-specification.git) with Symfony.
 
-![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)
-
 [![Build Status](https://travis-ci.org/gbprod/algolia-specification-bundle.svg?branch=master)](https://travis-ci.org/gbprod/algolia-specification-bundle)
 [![codecov](https://codecov.io/gh/gbprod/algolia-specification-bundle/branch/master/graph/badge.svg)](https://codecov.io/gh/gbprod/algolia-specification-bundle)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gbprod/algolia-specification-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/gbprod/algolia-specification-bundle/?branch=master)
 [![Dependency Status](https://www.versioneye.com/user/projects/574a9c9ace8d0e004130d337/badge.svg)](https://www.versioneye.com/user/projects/574a9c9ace8d0e004130d337)
 
-[![Latest Stable Version](https://poser.pugx.org/gbprod/algolia-specification-bundle/v/stable)](https://packagist.org/packages/gbprod/algolia-specification)
-[![Total Downloads](https://poser.pugx.org/gbprod/algolia-specification-bundle/downloads)](https://packagist.org/packages/gbprod/algolia-specification)
-[![Latest Unstable Version](https://poser.pugx.org/gbprod/algolia-specification-bundle/v/unstable)](https://packagist.org/packages/gbprod/algolia-specification)
-[![License](https://poser.pugx.org/gbprod/algolia-specification-bundle/license)](https://packagist.org/packages/gbprod/algolia-specification)
+[![Latest Stable Version](https://poser.pugx.org/gbprod/algolia-specification-bundle/v/stable)](https://packagist.org/packages/gbprod/algolia-specification-bundle)
+[![Total Downloads](https://poser.pugx.org/gbprod/algolia-specification-bundle/downloads)](https://packagist.org/packages/gbprod/algolia-specification-bundle)
+[![Latest Unstable Version](https://poser.pugx.org/gbprod/algolia-specification-bundle/v/unstable)](https://packagist.org/packages/gbprod/algolia-specification-bundle)
+[![License](https://poser.pugx.org/gbprod/algolia-specification-bundle/license)](https://packagist.org/packages/gbprod/algolia-specification-bundle)
 
 ## Installation
 
@@ -91,7 +89,7 @@ class IsAvailableFactory implements Factory
 ### Declare your Factory
 
 ```yaml
-// src/GBProd/Acme/AcmeBundle/Resource/config/service.yml
+# src/GBProd/Acme/AcmeBundle/Resource/config/service.yml
 
 services:
     acme.algolia.query_factory.is_available:
@@ -103,7 +101,7 @@ services:
 ### Inject handler in your repository class
 
 ```yaml
-// src/GBProd/Acme/AcmeBundle/Resource/config/service.yml
+# src/GBProd/Acme/AcmeBundle/Resource/config/service.yml
 
 services:
     acme.product_repository:
