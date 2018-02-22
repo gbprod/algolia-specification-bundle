@@ -1,8 +1,10 @@
 services:
     gbprod.algolia_specification_registry:
         class: GBProd\AlgoliaSpecification\Registry
+        public: true
 
     gbprod.algolia_specification_handler:
         class: GBProd\AlgoliaSpecification\Handler
         arguments:
             - "@gbprod.algolia_specification_registry"
+        public: true
